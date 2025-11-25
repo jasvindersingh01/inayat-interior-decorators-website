@@ -48,7 +48,7 @@ export default function Navbar() {
 
           <a href="#contact"><button
             className=
-             "px-4 py-2 rounded-md text-sm font-semibold transition bg-red-600 text-white cursor-pointer"
+            "px-4 py-2 rounded-md text-sm font-semibold transition bg-red-600 text-white cursor-pointer"
           >
             Book Consultation
           </button></a>
@@ -75,9 +75,9 @@ export default function Navbar() {
             <a href="#portfolio" onClick={() => setOpen(false)} className="hover:text-red-600">Portfolio</a>
             <a href="#contact" onClick={() => setOpen(false)} className="hover:text-red-600">Contact</a>
 
-            <button className="mt-2 px-4 py-2 bg-red-600 text-white rounded-md">
+            <a href="#contact"> <button className="mt-2 px-4 py-2 bg-red-600 text-white rounded-md">
               Book Consultation
-            </button>
+            </button></a>
           </nav>
         </div>
       )}
