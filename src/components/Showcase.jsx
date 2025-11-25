@@ -34,36 +34,38 @@ const projects = [
 
 export default function ProjectsShowcase() {
   return (
-    <section id="portfolio" className="py-8 bg-white scroll-mt-20">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Our Interior Work
-      </h2>
+    <section id="portfolio" className="px-4 md:px-12 py-16 bg-white scroll-mt-24">
+  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+    Our Interior Work
+  </h2>
 
-      <div className="max-w-6xl mx-auto space-y-24">
-        {projects.map((p, i) => (
-          <div
-            key={i}
-            className={`flex flex-col md:flex-row items-center gap-10 ${
-              i % 2 !== 0 ? "md:flex-row-reverse" : ""
-            }`}
-          >
-            {/* Image */}
-            <div className="md:w-1/2">
-              <img
-                src={p.img}
-                alt={p.title}
-                className="rounded-xl shadow-xl hover:scale-[1.02] transition duration-300 w-full object-cover"
-              />
-            </div>
+  <div className="max-w-6xl mx-auto space-y-20">
+    {projects.map((p, i) => (
+      <div
+        key={i}
+        className={`flex flex-col md:flex-row items-center gap-10 p-4 md:p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 ${
+          i % 2 !== 0 ? "md:flex-row-reverse" : ""
+        }`}
+      >
+        {/* Image */}
+        <div className="md:w-1/2">
+          <img
+            src={p.img}
+            alt={p.title}
+            className="rounded-xl shadow-md hover:scale-[1.02] transition duration-300 w-full object-cover"
+          />
+        </div>
 
-            {/* Text */}
-            <div className="md:w-1/2">
-              <h3 className="text-2xl font-semibold mb-3">{p.title}</h3>
-              <p className="text-gray-700 leading-relaxed">{p.desc}</p>
-            </div>
-          </div>
-        ))}
+        {/* Text */}
+        <div className="md:w-1/2">
+          <h3 className="text-2xl font-semibold mb-4">{p.title}</h3>
+          <p className="text-gray-700 leading-relaxed text-[17px]">
+            {p.desc}
+          </p>
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
   );
 }
