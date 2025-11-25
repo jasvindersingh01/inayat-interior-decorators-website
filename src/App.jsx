@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import Showcase from './components/Showcase'
-import WhyChoose from './components/WhyChoose';
+import WhyChooseUs from './components/WhyChooseUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -16,7 +16,7 @@ export default function App(){
         <AboutUs />
         <Services />
         <Showcase />
-        <WhyChoose />
+        <WhyChooseUs />
         <Contact />
       </main>
       <Footer />
