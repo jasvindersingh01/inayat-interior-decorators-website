@@ -1,9 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
     <section id="contact" className="py-14 bg-white scroll-mt-18">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+     <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }} className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
-        {/* LEFT SIDE — Contact Info */}
         <div>
           <h2 className="text-4xl font-playfair font-bold mb-6">
             Get in Touch
@@ -52,7 +57,6 @@ export default function Contact() {
           </a>
         </div>
 
-        {/* RIGHT SIDE — Form */}
         <div>
           <h3 className="text-2xl font-semibold mb-4">Send a Message</h3>
 
@@ -84,7 +88,7 @@ export default function Contact() {
           </form>
         </div>
 
-      </div>
+      </motion.div>
     </section>
   );
 }

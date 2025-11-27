@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import Logo from "../assets/Logo.jpg"
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-10 mt-20">
-      <div className="max-w-6xl mx-auto px-6 text-center">
+     <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+         className="max-w-6xl mx-auto px-6 text-center">
 
         {/* LOGO + NAME */}
         <div className="flex flex-col items-center gap-3 mb-6">
@@ -51,9 +57,9 @@ export default function Footer() {
         </p>
 
         <p className="text-gray-600 text-xs mt-1">
-         Designed & Developed by <span className="text-red-600 font-semibold">RightAds</span> | Jasvinder
+         Designed & Developed by <span className="text-red-600 font-semibold">RightAds</span>
         </p>
-      </div>
+      </motion.div>
     </footer>
   );
 }

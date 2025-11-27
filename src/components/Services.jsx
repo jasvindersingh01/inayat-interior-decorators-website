@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaCouch, FaBed, FaDrawPolygon, FaHome, FaImages, FaTools } from "react-icons/fa";
 
 export default function Services() {
@@ -36,7 +37,12 @@ export default function Services() {
 
   return (
     <section id="services" className="py-14 bg-white scroll-mt-14">
-      <div className="max-w-6xl mx-auto px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-playfair font-bold text-center mb-14">
           Our Services
         </h2>
@@ -57,12 +63,11 @@ export default function Services() {
                 {s.desc}
               </p>
 
-              {/* subtle underline effect on hover */}
               <span className="h-[2px] w-0 bg-red-600 mt-2 group-hover:w-full transition-all duration-300"></span>
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

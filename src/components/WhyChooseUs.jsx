@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { FaCheckCircle, FaUserTie, FaCouch, FaClock } from "react-icons/fa";
 
 export default function WhyChoose() {
@@ -26,7 +27,12 @@ export default function WhyChoose() {
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="max-w-6xl mx-auto px-6">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+        className="max-w-6xl mx-auto px-6">
 
         <h2 className="text-4xl font-playfair font-bold text-center mb-16">
           Why Choose Us
@@ -54,7 +60,7 @@ export default function WhyChoose() {
           ))}
 
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
