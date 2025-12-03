@@ -5,27 +5,28 @@ require("dotenv").config();
 
 const app = express();
 
-// ⭐ FIX FOR RENDER CORS ERROR
-app.use(cors({
-  origin: "*",
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
+app.use(
+  cors({
+    origin: "*",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type",
+  })
+);
 
-app.options("*", cors()); // ⭐ THIS IS IMPORTANT
-
-app.use(express.json());
+app.options("*", cors());
 
 app.get("/", (req, res) => {
-  res.send("Backend is running...");
+  res.send("Render Backend Working");
 });
+
+app.use(express.json());
 
 app.use("/api/contact", require("./routes/contactRoutes"));
 
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log("MongoDB Error:", err));
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log("Server running on PORT " + PORT));
+app.listen(PORT, () => console.log("Backend running on port", PORT));
