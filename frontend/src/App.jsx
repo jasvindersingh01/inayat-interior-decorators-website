@@ -7,6 +7,7 @@ import Showcase from './components/Showcase'
 import WhyChooseUs from './components/WhyChooseUs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import {Toaster} from "react-hot-toast"
 
 export default function App(){
 
@@ -19,6 +20,7 @@ export default function App(){
     <div className="font-inter text-gray-800">
       <Navbar />
       <main>
+        <Toaster position="top-center" />
         <Hero />
         <AboutUs />
         <Services />
