@@ -36,7 +36,7 @@ export default function Services() {
 ];
 
   return (
-    <section id="services" className="py-14 bg-white scroll-mt-14">
+    <section id="services" className="py-14 bg-white scroll-mt-30">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
