@@ -1,3 +1,6 @@
+const Contact = require("../models/Contact");
+const sendNotificationEmail = require("../utils/mailer");
+
 exports.submitForm = async (req, res) => {
   console.log("🔥 New Request Received");
   console.log("Body:", req.body);
