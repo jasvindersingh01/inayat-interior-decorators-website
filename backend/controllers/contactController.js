@@ -2,6 +2,7 @@ const Contact = require("../models/Contact");
 const sendNotificationEmail = require("../utils/mailer");
 
 exports.submitForm = async (req, res) => {
+  console.log("New Request Received");
   try {
     const { name, phone, email, message } = req.body;
 

@@ -5,11 +5,17 @@ require("dotenv").config();
 
 const app = express();
 
+const allowedOrigins = [
+  "https://inayat-interior-decorators-website.vercel.app",
+  "http://localhost:5173"
+];
+
 app.use(cors({
-  origin: "https://inayat-interior-decorators-website.vercel.app",
+  origin: allowedOrigins,
   methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"],
+  allowedHeaders: ["Content-Type"]
 }));
+
 
 app.use(express.json());
 
