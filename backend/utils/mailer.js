@@ -15,6 +15,7 @@ async function sendNotificationEmail(name, phone, email, message) {
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
+    console.log("RESEND KEY:", process.env.RESEND_API_KEY);
 
     return true;
 
