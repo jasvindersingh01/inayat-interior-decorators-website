@@ -8,7 +8,7 @@ export default function AboutUs() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
-        className="max-w-6xl mx-auto px-6 text-center"
+        className="max-w-7xl mx-auto px-6 text-center"
       >
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
           About <span className="text-red-600">Inayat Interior & Decorators</span>

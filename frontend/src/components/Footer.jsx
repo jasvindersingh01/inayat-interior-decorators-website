@@ -11,7 +11,6 @@ export default function Footer() {
         viewport={{ once: true, amount: 0.3 }}
          className="max-w-6xl mx-auto px-6 text-center">
 
-        {/* LOGO + NAME */}
         <div className="flex flex-col items-center gap-3 mb-6">
           <img
             src={Logo}
@@ -24,7 +23,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Quick links */}
         <div className="flex justify-center gap-8 mb-6 text-gray-300 text-sm">
           <a href="#home" className="hover:text-red-500 transition">Home</a>
           <a href="#services" className="hover:text-red-500 transition">Services</a>
@@ -32,7 +30,6 @@ export default function Footer() {
           <a href="#contact" className="hover:text-red-500 transition">Contact</a>
         </div>
 
-        {/* Social links */}
         <div className="flex justify-center gap-6 text-gray-300 text-sm mb-6">
           <a
             href="https://www.instagram.com/inayat_interior_decorator/"
@@ -51,14 +48,11 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* bottom line */}
+      <div className="border-t border-gray-700 mt-10 pt-4 text-center">
         <p className="text-gray-400 text-xs">
           © {new Date().getFullYear()} Inayat Interior & Decorators — All Rights Reserved
         </p>
-
-        <p className="text-gray-600 text-xs mt-1">
-         Designed & Developed by <span className="text-red-600 font-semibold">RightAds</span>
-        </p>
+        </div>
       </motion.div>
     </footer>
   );

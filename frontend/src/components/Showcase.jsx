@@ -44,7 +44,7 @@ export default function ProjectsShowcase() {
         Our Interior Work
       </motion.h2>
 
-      <div className="max-w-6xl mx-auto space-y-20">
+      <div className="max-w-7xl mx-auto space-y-20">
         {projects.map((p, i) => (
           <motion.div
             key={i}

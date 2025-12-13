@@ -32,7 +32,7 @@ export default function WhyChoose() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.3 }}
-        className="max-w-6xl mx-auto px-6">
+        className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-4xl font-playfair font-bold text-center mb-16">
           Why Choose Us

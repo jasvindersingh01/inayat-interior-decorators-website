@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Contact from './components/Contact'; 
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
@@ -19,6 +20,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <div className="font-inter text-gray-800">
         
         <Navbar />
