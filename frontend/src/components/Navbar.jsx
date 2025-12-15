@@ -47,6 +47,7 @@ export default function Navbar() {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/services">Services</Link>
+          <Link to="/portfolio">Portfolio</Link>
           <Link to="/contact">Contact</Link>
 
           <a
@@ -86,12 +87,15 @@ export default function Navbar() {
             <Link to="/" onClick={() => setOpen(false)}>Home</Link>
             <Link to="/about" onClick={() => setOpen(false)}>About</Link>
             <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
+            <Link to="/protfolio" onClick={() => setOpen(false)}>Protfolio</Link>
             <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
-            <Link to="/contact">
-              <button className="mt-2 px-4 py-2 bg-red-600 text-white rounded-md">
-                Book Consultation
-              </button>
-            </Link>
+               <a
+            href="tel:9694218177"
+            className="px-4 py-2 rounded-md text-sm font-semibold bg-red-600 text-white flex items-center gap-2 hover:bg-red-700 transition"
+          >
+            <FaPhoneAlt />
+            <span>Call: 9873002495</span>
+          </a>
           </nav>
         </div>
       )}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import HeroImg from "../assets/HeroImg3.jpg"
 import { motion } from "framer-motion";
 
@@ -27,12 +28,12 @@ export default function Hero(){
         Transforming ordinary spaces into modern, stylish, and comfortable interiors.
       </p>
 
-      <a
-        href="#contact"
+      <Link
+        to="/contact"
         className="inline-flex items-center gap-3 px-6 py-3 bg-amber-400 text-black rounded-md font-semibold shadow"
       >
         Book Consultation
-      </a>
+      </Link>
     </motion.div>
 
   </div>

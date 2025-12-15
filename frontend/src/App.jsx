@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Contact from './components/Contact'; 
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -9,6 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import AboutPage from "./pages/About";
 import ServicesPage from "./pages/Services";
+import Portfolio from "./pages/Portfolio";
 import ContactPage from "./pages/Contact";
 
 export default function App() {
@@ -32,6 +32,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

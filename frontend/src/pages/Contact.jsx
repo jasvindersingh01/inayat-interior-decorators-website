@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import banner from "../assets/banner.webp"
+import { FaInstagram, FaFacebookF, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -57,146 +58,184 @@ export default function Contact() {
 
   return (
     <>
-        <div className="w-full h-[25vh] md:h-[45vh] relative">
-            <img
-              src={banner}
-              alt="Banner"
-              className="w-full h-full object-cover object-center opacity-90"
-            />
-            <div className="absolute inset-0 bg-black/40" />
-            <div className="absolute inset-0 flex items-center justify-center pt-16">
-              <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
-                Contact Us
-              </h1>
-            </div>
-          </div>
-
-    <section id="contact" className="py-14 bg-white scroll-mt-18">
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: "easeOut" }}
-        viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
-
-        <div>
-          <h2 className="text-4xl font-playfair font-bold mb-6">
-            Get in Touch
-          </h2>
-
-          <p className="text-gray-600 leading-relaxed mb-6">
-            Have a project in mind? Need full home interiors or a single room makeover?
-            We’d love to craft a beautiful space for you.
-          </p>
-
-          <div className="flex flex-col gap-3 text-gray-700">
-            <p>
-              <span className="font-semibold">Phone:</span> 9873002495
-            </p>
-
-            <p>
-              <span className="font-semibold">Email:</span> inayatinteriordecorator@gmail.com
-            </p>
-
-            <p>
-              <span className="font-semibold">Location:</span>
-              Shop No. 516, East Chawla Colony, Ballabhgarh, Faridabad
-            </p>
-
-            <div className="mt-4 flex gap-4">
-              <a href="https://www.instagram.com/inayat_interior_decorator/"
-                target="_blank"
-                className="text-red-600 font-semibold hover:underline">
-                Instagram
-              </a>
-
-              <a href="https://www.facebook.com/inayat.interior.decorator"
-                target="_blank"
-                className="text-red-600 font-semibold hover:underline">
-                Facebook
-              </a>
-            </div>
-          </div>
-
-          <a
-            href="https://wa.me/919873002495"
-            target="_blank"
-            className="inline-block mt-8 px-6 py-3 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700 transition"
-          >
-            WhatsApp Us
-          </a>
+      <div className="w-full h-[25vh] md:h-[45vh] relative">
+        <img
+          src={banner}
+          alt="Banner"
+          className="w-full h-full object-cover object-center opacity-90"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 flex items-center justify-center pt-16">
+          <h1 className="text-white text-4xl md:text-5xl font-bold drop-shadow-lg">
+            Contact Us
+          </h1>
         </div>
+      </div>
 
-        <div>
-          <h3 className="text-2xl font-semibold mb-4">Send a Message</h3>
+      <section id="contact" className="py-14 bg-white scroll-mt-18">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }} className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
-          <form 
-          onSubmit={handleSubmit}
-          className="flex flex-col gap-4">
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Your Name"
-              className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
-            />
+          <div>
+            <h2 className="text-4xl font-playfair font-bold mb-6">
+              Get in Touch
+            </h2>
 
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Email Address"
-              className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
-            />
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Have a project in mind? Need full home interiors or a single room makeover?
+              We’d love to craft a beautiful space for you.
+            </p>
 
-            <input
-              type="text"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder="Phone Number"
-              className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
-            />
+            <div className="flex flex-col gap-3 text-gray-700">
+              <p className="flex items-center gap-3">
+                <FaPhoneAlt className="text-red-600" />
+                <span className="font-semibold">Phone:</span>
+                <a
+                  href="tel:9873002495"
+                  className="hover:text-red-600 transition"
+                >
+                  9873002495
+                </a>
+              </p>
 
-            <textarea
-              placeholder="Tell us about your project"
-              rows="4"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
-            ></textarea>
+              <p className="flex items-center gap-3">
+                <FaEnvelope className="text-red-600" />
+                <span className="font-semibold">Email:</span>
+                <a
+                  href="mailto:inayatinteriordecorator@gmail.com"
+                  className="hover:text-red-600 transition"
+                >
+                  inayatinteriordecorator@gmail.com
+                </a>
+              </p>
 
-            <button
-              type="submit"
-              disabled={loading}
-              className={`px-6 py-3 bg-red-600 text-white font-semibold rounded-md transition cursor-pointer 
+              <p className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-red-600 mt-1" />
+                <span className="font-semibold">Location:</span>
+                <span>
+                  Shop No. 516, East Chawla Colony, Ballabhgarh, Faridabad
+                </span>
+              </p>
+
+              <div className="mt-6">
+                <h4 className="text-sm font-semibold text-gray-700 mb-3 tracking-wide uppercase">
+                  Follow Us
+                </h4>
+
+                <div className="flex gap-4">
+
+                  <a
+                    href="https://www.instagram.com/inayat_interior_decorator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                    className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-300 text-gray-700
+                 hover:bg-pink-500 hover:text-white hover:border-pink-500 transition"
+                  >
+                    <FaInstagram className="text-xl" />
+                  </a>
+
+                  <a
+                    href="https://www.facebook.com/inayat.interior.decorator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                    className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-300 text-gray-700
+                 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition"
+                  >
+                    <FaFacebookF className="text-xl" />
+                  </a>
+
+                  <a
+                    href="https://wa.me/919873002495?text=Hello%20Inayat%20Interior,%20I%20want%20to%20book%20a%20consultation."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp"
+                    className="w-11 h-11 flex items-center justify-center rounded-full border border-gray-300 text-gray-700
+                 hover:bg-green-500 hover:text-white hover:border-green-500 transition"
+                  >
+                    <FaWhatsapp className="text-xl" />
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-semibold mb-4">Send a Message</h3>
+
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-4">
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
+              />
+
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Email Address"
+                className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
+              />
+
+              <input
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                placeholder="Phone Number"
+                className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
+              />
+
+              <textarea
+                placeholder="Tell us about your project"
+                rows="4"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                className="p-3 border border-gray-300 rounded focus:outline-none focus:border-red-600"
+              ></textarea>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className={`px-6 py-3 bg-red-600 text-white font-semibold rounded-md transition cursor-pointer 
       ${loading ? "bg-red-400 cursor-not-allowed" : "hover:bg-red-700"}
     `}
-            >
-              {loading ? "Sending..." : "Send Message"}
-            </button>
-          </form>
-        </div>
+              >
+                {loading ? "Sending..." : "Send Message"}
+              </button>
+            </form>
+          </div>
 
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="mt-16 w-full h-72 md:h-96 rounded-xl overflow-hidden shadow-xl max-w-6xl mx-auto px-6"
-      >
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.305425186094!2d77.31762897532485!3d28.34961427582039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdb9604bd1b73%3A0x38bfd6bcbc6d5c53!2sInayat%20Interior%20%26%20Decorators!5e0!3m2!1sen!2sin!4v1764738456229!5m2!1sen!2sin"
-          className="w-full h-full border-0"
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </motion.div>
-    </section>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-16 w-full h-72 md:h-96 rounded-xl overflow-hidden shadow-xl max-w-7xl mx-auto px-6"
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3511.305425186094!2d77.31762897532485!3d28.34961427582039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cdb9604bd1b73%3A0x38bfd6bcbc6d5c53!2sInayat%20Interior%20%26%20Decorators!5e0!3m2!1sen!2sin!4v1764738456229!5m2!1sen!2sin"
+            className="w-full h-full border-0"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </motion.div>
+      </section>
     </>
   );
 }
