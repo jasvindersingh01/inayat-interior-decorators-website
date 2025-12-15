@@ -15,37 +15,37 @@ export default function HomeServices() {
       title: "Interior Design",
       desc: "Residential & commercial interior design solutions crafted with style and functionality.",
       icon: <FaHome />,
-      img: "/services/living-room.jpg",
+      img: "services/living-room.jpg",
     },
     {
       title: "Modular Kitchen & Wardrobes",
       desc: "Modern modular kitchens and wardrobes designed for comfort and durability.",
       icon: <FaBoxes />,
-      img: "/services/modular-kitchen.jpg",
+      img: "services/modular-kitchen.jpg",
     },
     {
       title: "False Ceiling Solutions",
       desc: "Gypsum, POP, PVC & designer false ceilings with premium finish.",
       icon: <FaTools />,
-      img: "/services/false-ceiling.avif",
+      img: "services/false-ceiling.avif",
     },
     {
       title: "Wall Paneling & Decor",
       desc: "PVC, wooden panels and decorative wall solutions for elegant interiors.",
       icon: <FaThLarge />,
-      img: "/services/wall-panel.jpg",
+      img: "services/wall-panel.jpg",
     },
     {
       title: "Civil Work & Renovation",
       desc: "Dismantling, wall shifting, brickwork and complete renovation services.",
       icon: <FaHammer />,
-      img: "/services/civil-work.webp",
+      img: "services/civil-work.webp",
     },
     {
       title: "Painting & Finishing",
       desc: "Interior & exterior painting, polishing and final finishing touches.",
       icon: <FaPaintRoller />,
-      img: "/services/painting.webp",
+      img: "services/painting.webp",
     },
   ];
 

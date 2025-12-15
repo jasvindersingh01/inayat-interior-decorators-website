@@ -19,7 +19,7 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/inayatinterior">
     <ScrollToTop />
       <div className="font-inter text-gray-800">
         

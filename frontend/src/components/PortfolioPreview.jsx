@@ -3,32 +3,32 @@ import { Link } from "react-router-dom";
 
 const projects = [
   {
-      img: "/portfolio/designer-tv-unit.jpeg",
+      img: "portfolio/designer-tv-unit.jpeg",
       title: "Designer TV Unit with Backlit Wall Shelves",
       desc: "Modern gypsum TV unit featuring geometric wall niches with warm LED lighting, concealed wiring, and a clean contemporary finish for elegant living spaces."
     },
     {
-      img: "/portfolio/luxury-hall-floor.jpeg",
+      img: "portfolio/luxury-hall-floor.jpeg",
       title: "Luxury Wooden Flooring",
       desc: "High-end wooden flooring installation with precise alignment and rich textures for elegant living spaces."
     },
     {
-      img: "/portfolio/modern-office-glass-partition.jpeg",
+      img: "portfolio/modern-office-glass-partition.jpeg",
       title: "Modern Cafe Interior with Glass Partitions",
       desc: "Contemporary office interior featuring black-framed glass partitions, industrial-style ceiling, focused lighting, and comfortable lounge seating for a modern workspace."
     },
     {
-      img: "/portfolio/modern-living-led-ceiling.jpeg",
+      img: "portfolio/modern-living-led-ceiling.jpeg",
       title: "Modern Living Room with LED False Ceiling",
       desc: "Contemporary living room featuring a gypsum false ceiling with blue LED cove lighting, recessed spotlights, and a clean modern layout designed for elegant everyday living."
     },
     {
-      img: "/portfolio/staircase-wood-floor.jpeg",
+      img: "portfolio/staircase-wood-floor.jpeg",
       title: "Designer Ceiling with Lighting",
       desc: "Contemporary ceiling design featuring modern lighting elements that enhance ambiance and architectural appeal."
     },
     {
-      img: "/portfolio/commercial-glass-facade.jpeg",
+      img: "portfolio/commercial-glass-facade.jpeg",
       title: "Commercial Glass Facade & Structural Glazing",
       desc: "High-quality structural glazing and glass facade work for a commercial building, providing a sleek modern appearance, maximum natural light, and long-lasting weather-resistant performance."
     },

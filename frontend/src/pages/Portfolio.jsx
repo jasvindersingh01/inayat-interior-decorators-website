@@ -4,77 +4,77 @@ import banner from "../assets/banner.webp";
 export default function Portfolio() {
   const projects = [
     {
-      img: "/portfolio/designer-tv-unit.jpeg",
+      img: "portfolio/designer-tv-unit.jpeg",
       title: "Designer TV Unit with Backlit Wall Shelves",
       desc: "Modern gypsum TV unit featuring geometric wall niches with warm LED lighting, concealed wiring, and a clean contemporary finish for elegant living spaces."
     },
     {
-      img: "/portfolio/luxury-hall-floor.jpeg",
+      img: "portfolio/luxury-hall-floor.jpeg",
       title: "Luxury Wooden Flooring",
       desc: "High-end wooden flooring installation with precise alignment and rich textures for elegant living spaces."
     },
     {
-      img: "/portfolio/modern-office-glass-partition.jpeg",
+      img: "portfolio/modern-office-glass-partition.jpeg",
       title: "Modern Cafe Interior with Glass Partitions",
       desc: "Contemporary office interior featuring black-framed glass partitions, industrial-style ceiling, focused lighting, and comfortable lounge seating for a modern workspace."
     },
     {
-      img: "/portfolio/modern-living-led-ceiling.jpeg",
+      img: "portfolio/modern-living-led-ceiling.jpeg",
       title: "Modern Living Room with LED False Ceiling",
       desc: "Contemporary living room featuring a gypsum false ceiling with blue LED cove lighting, recessed spotlights, and a clean modern layout designed for elegant everyday living."
     },
     {
-      img: "/portfolio/staircase-wood-floor.jpeg",
+      img: "portfolio/staircase-wood-floor.jpeg",
       title: "Designer Ceiling with Lighting",
       desc: "Contemporary ceiling design featuring modern lighting elements that enhance ambiance and architectural appeal."
     },
     {
-      img: "/portfolio/commercial-glass-facade.jpeg",
+      img: "portfolio/commercial-glass-facade.jpeg",
       title: "Commercial Glass Facade & Structural Glazing",
       desc: "High-quality structural glazing and glass facade work for a commercial building, providing a sleek modern appearance, maximum natural light, and long-lasting weather-resistant performance."
     },
     {
-      img: "/portfolio/luxury-residential-exterior.jpeg",
+      img: "portfolio/luxury-residential-exterior.jpeg",
       title: "Luxury Residential Exterior with Wooden Cladding",
       desc: "Premium residential exterior showcasing wooden cladding, glass balcony railings, and modern architectural detailing, delivering a perfect balance of elegance, durability, and contemporary design."
     },
     {
-      img: "/portfolio/designer-ceiling.jpeg",
+      img: "portfolio/designer-ceiling.jpeg",
       title: "Wooden Flooring & Staircase Area",
       desc: "Seamless wooden flooring work combined with modern staircase design for a premium interior look."
     },
     {
-      img: "/portfolio/wooden-deck-1.jpeg",
+      img: "portfolio/wooden-deck-1.jpeg",
       title: "Outdoor Wooden Deck Flooring",
       desc: "Premium quality outdoor wooden deck flooring designed for durability, weather resistance, and a warm natural finish."
     },
     {
-      img: "/portfolio/bedroom-flooring.jpeg",
+      img: "portfolio/bedroom-flooring.jpeg",
       title: "WPC Wall Paneling",
       desc: "Vertical WPC wall panel installation delivering a clean, modern aesthetic with long-lasting performance."
     },
     {
-      img: "/portfolio/wpc-wall-panel.jpeg",
+      img: "portfolio/wpc-wall-panel.jpeg",
       title: "Balcony Wall & Ceiling Paneling",
       desc: "Stylish balcony transformation using durable paneling materials suitable for outdoor environments."
     },
     {
-      img: "/portfolio/balcony-paneling.jpeg",
+      img: "portfolio/balcony-paneling.jpeg",
       title: "Balcony Wooden Flooring",
       desc: "Elegant wooden flooring solution for balconies, combining aesthetics with moisture resistance."
     },
     {
-      img: "/portfolio/wooden-balcony-floor.jpeg",
+      img: "portfolio/wooden-balcony-floor.jpeg",
       title: "Custom Curved Wooden Flooring",
       desc: "Expertly crafted curved wooden flooring work, showcasing precision craftsmanship and premium finishes."
     },
     {
-      img: "/portfolio/curved-wood-floor.jpeg",
+      img: "portfolio/curved-wood-floor.jpeg",
       title: "Bedroom Wooden Flooring",
       desc: "Warm and comfortable bedroom flooring designed to elevate the overall interior experience."
     },
     {
-      img: "/portfolio/exterior-facade.jpeg",
+      img: "portfolio/exterior-facade.jpeg",
       title: "Modern Exterior Facade Design",
       desc: "Contemporary exterior elevation featuring wood textures, glass elements, and clean architectural lines."
     }
