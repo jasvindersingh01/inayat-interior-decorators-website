@@ -5,6 +5,7 @@ import PortfolioPreview from "../components/PortfolioPreview";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonial";
 import WhatsAppFloat from "../components/WhatsAppFlot";
+import HomeWorkVideos from "../components/HomeWorkVideos";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <PortfolioPreview />
       <WhyChooseUs />
       <Testimonials />
+      <HomeWorkVideos />
       <WhatsAppFloat />
     </>
   );
