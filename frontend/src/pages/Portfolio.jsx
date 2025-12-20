@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import banner from "../assets/banner.webp";
+import PortfolioWorkVideos from "../components/PortfolioWorkVideos";
 
 export default function Portfolio() {
   const projects = [
@@ -145,6 +146,7 @@ export default function Portfolio() {
 
       </div>
     </section>
+    <PortfolioWorkVideos />
     </>
   );
 }
