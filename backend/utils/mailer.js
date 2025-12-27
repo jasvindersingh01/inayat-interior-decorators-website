@@ -5,8 +5,8 @@ async function sendNotificationEmail(name, phone, email, message) {
   try {
     await resend.emails.send({
       from: "Inayat Interiors <onboarding@resend.dev>",
-      to: "inayatinteriordecorator@gmail.com",
-      subject: "New Contact Form Message",
+      to: [process.env.EMAIL_TO],
+      subject: "New Contact Form Inayat Interior",
       html: `
         <h2>New Contact Submission</h2>
         <p><strong>Name:</strong> ${name}</p>
@@ -15,14 +15,15 @@ async function sendNotificationEmail(name, phone, email, message) {
         <p><strong>Message:</strong> ${message}</p>
       `,
     });
-    console.log("RESEND KEY:", process.env.RESEND_API_KEY);
 
-    return true;
+    if (error) {
+      throw error;
+    }
 
+    console.log("Email Sent ✔ via Resend", data);
   } catch (err) {
-    console.log("Email Error:", err);
+    console.error("Email Error (Resend):", err);
     throw err;
   }
-}
-
+};
 module.exports = sendNotificationEmail;

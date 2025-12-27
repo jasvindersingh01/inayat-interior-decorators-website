@@ -1,4 +1,4 @@
-import banner from "../assets/banner.webp";
+import banner from "../assets/banner.jpg";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {

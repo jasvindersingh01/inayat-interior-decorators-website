@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <nav className="hidden md:flex gap-8 items-center hower:yellow-400">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/services">Services</Link>
           <Link to="/portfolio">Portfolio</Link>
           <Link to="/contact">Contact</Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
         >
           <nav className="flex flex-col items-start px-6 py-4 gap-4">
             <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-            <Link to="/about" onClick={() => setOpen(false)}>About</Link>
+            <Link to="/about" onClick={() => setOpen(false)}>About Us</Link>
             <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
             <Link to="/protfolio" onClick={() => setOpen(false)}>Protfolio</Link>
             <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>

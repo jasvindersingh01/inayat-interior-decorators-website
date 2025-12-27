@@ -4,33 +4,32 @@ const mongoose = require("mongoose");
 require("dotenv").config();
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
-const allowedOrigins = [
-  "https://inayat-interior-decorators-website.vercel.app",
-  "http://localhost:5173"
-];
-
-app.use(cors({
-  origin: allowedOrigins,
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
-}));
-
+app.use(
+  cors({
+    origin: [
+      "http://rightadsdemo.in/inayatinterior/",
+      "http://localhost:5173/inayatinterior/"
+    ],
+    methods: ["GET", "POST"],
+  })
+);
 
 app.use(express.json());
 
 app.use("/api/contact", require("./routes/contactRoutes"));
 
+app.get("/", (req, res) => {
+  res.send("A-One Classes Backend is running 🚀");
+});
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log("MongoDB Error:", err));
 
-app.use((req, res) => {
-  res.status(404).json({ message: "Route Not Found" });
-});
 
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on PORT ${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });

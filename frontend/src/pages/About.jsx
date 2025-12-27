@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import aboutImg from "../assets/about/HeroImg2.jpg";
-import banner from "../assets/banner.webp";
+import banner from "../assets/banner.jpg";
 
 import certificate from "../assets/about/certificate.jpeg";
 import work1 from "../assets/about/img1.jpeg";
